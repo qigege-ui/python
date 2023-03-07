@@ -40,9 +40,9 @@ def baidu_translate(content, from_lang, to_lang):
         return result['trans_result'][0]['dst']
 
 languages = ['zh', 'en', 'ru', 'fra','de','jp','th','kor','pt', 'it', 'en', 'zh']
-output_file = 'test.txt'
-input_file = 'cx.txt'
-output_file_compare = 'test_compare.txt'
+output_file = 'test.txt'#降重后文本
+input_file = 'cx.txt'#重复语句文本
+output_file_compare = 'test_compare.txt'#相似度输出文本
 
 with open(input_file, 'r', encoding='utf-8') as f_input, \
      open(output_file, 'w', encoding='utf-8') as f_output, \
