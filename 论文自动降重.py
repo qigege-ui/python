@@ -16,8 +16,8 @@ def compare_files(file1, file2):
 
 def baidu_translate(content, from_lang, to_lang):
     url = 'http://api.fanyi.baidu.com/api/trans/vip/translate'
-    appid = '20181128000240536'
-    secretKey = 'M7VYNBlDDU6VnrshD8dG'
+    appid = ''#自己去百度翻译找kay添加
+    secretKey = ''#自己去百度翻译找kay添加
     salt = '1435660288'
 
     sign = appid + content + salt + secretKey
